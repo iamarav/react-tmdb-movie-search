@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/react-tmdb-movie-search/static/css/main.87a38dd7.chunk.css",
-    "main.js": "/react-tmdb-movie-search/static/js/main.17ed9bed.chunk.js",
-    "main.js.map": "/react-tmdb-movie-search/static/js/main.17ed9bed.chunk.js.map",
-    "runtime-main.js": "/react-tmdb-movie-search/static/js/runtime-main.b4b9b69f.js",
-    "runtime-main.js.map": "/react-tmdb-movie-search/static/js/runtime-main.b4b9b69f.js.map",
+    "main.js": "/react-tmdb-movie-search/static/js/main.4dbf2703.chunk.js",
+    "main.js.map": "/react-tmdb-movie-search/static/js/main.4dbf2703.chunk.js.map",
+    "runtime-main.js": "/react-tmdb-movie-search/static/js/runtime-main.abbd8c09.js",
+    "runtime-main.js.map": "/react-tmdb-movie-search/static/js/runtime-main.abbd8c09.js.map",
     "static/css/2.d99397f9.chunk.css": "/react-tmdb-movie-search/static/css/2.d99397f9.chunk.css",
-    "static/js/2.8c4bb4b6.chunk.js": "/react-tmdb-movie-search/static/js/2.8c4bb4b6.chunk.js",
-    "static/js/2.8c4bb4b6.chunk.js.map": "/react-tmdb-movie-search/static/js/2.8c4bb4b6.chunk.js.map",
+    "static/js/2.0c171995.chunk.js": "/react-tmdb-movie-search/static/js/2.0c171995.chunk.js",
+    "static/js/2.0c171995.chunk.js.map": "/react-tmdb-movie-search/static/js/2.0c171995.chunk.js.map",
     "static/css/3.40117619.chunk.css": "/react-tmdb-movie-search/static/css/3.40117619.chunk.css",
-    "static/js/3.ca5c7d9f.chunk.js": "/react-tmdb-movie-search/static/js/3.ca5c7d9f.chunk.js",
-    "static/js/3.ca5c7d9f.chunk.js.map": "/react-tmdb-movie-search/static/js/3.ca5c7d9f.chunk.js.map",
+    "static/js/3.939152ec.chunk.js": "/react-tmdb-movie-search/static/js/3.939152ec.chunk.js",
+    "static/js/3.939152ec.chunk.js.map": "/react-tmdb-movie-search/static/js/3.939152ec.chunk.js.map",
     "static/css/4.8d7c1d43.chunk.css": "/react-tmdb-movie-search/static/css/4.8d7c1d43.chunk.css",
-    "static/js/4.41e8f3ef.chunk.js": "/react-tmdb-movie-search/static/js/4.41e8f3ef.chunk.js",
-    "static/js/4.41e8f3ef.chunk.js.map": "/react-tmdb-movie-search/static/js/4.41e8f3ef.chunk.js.map",
+    "static/js/4.0dfc53c6.chunk.js": "/react-tmdb-movie-search/static/js/4.0dfc53c6.chunk.js",
+    "static/js/4.0dfc53c6.chunk.js.map": "/react-tmdb-movie-search/static/js/4.0dfc53c6.chunk.js.map",
     "static/js/5.250a3140.chunk.js": "/react-tmdb-movie-search/static/js/5.250a3140.chunk.js",
     "static/js/5.250a3140.chunk.js.map": "/react-tmdb-movie-search/static/js/5.250a3140.chunk.js.map",
     "index.html": "/react-tmdb-movie-search/index.html",
@@ -21,13 +21,13 @@
     "static/css/3.40117619.chunk.css.map": "/react-tmdb-movie-search/static/css/3.40117619.chunk.css.map",
     "static/css/4.8d7c1d43.chunk.css.map": "/react-tmdb-movie-search/static/css/4.8d7c1d43.chunk.css.map",
     "static/css/main.87a38dd7.chunk.css.map": "/react-tmdb-movie-search/static/css/main.87a38dd7.chunk.css.map",
-    "static/js/2.8c4bb4b6.chunk.js.LICENSE.txt": "/react-tmdb-movie-search/static/js/2.8c4bb4b6.chunk.js.LICENSE.txt"
+    "static/js/2.0c171995.chunk.js.LICENSE.txt": "/react-tmdb-movie-search/static/js/2.0c171995.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b4b9b69f.js",
+    "static/js/runtime-main.abbd8c09.js",
     "static/css/2.d99397f9.chunk.css",
-    "static/js/2.8c4bb4b6.chunk.js",
+    "static/js/2.0c171995.chunk.js",
     "static/css/main.87a38dd7.chunk.css",
-    "static/js/main.17ed9bed.chunk.js"
+    "static/js/main.4dbf2703.chunk.js"
   ]
 }
