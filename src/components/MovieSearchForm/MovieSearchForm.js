@@ -7,7 +7,7 @@ import { Typeahead } from 'react-bootstrap-typeahead';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 import fMovie from '../../functions/movie'
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 
 class MovieSearchForm extends Component {
   constructor(props) {
@@ -45,6 +45,17 @@ class MovieSearchForm extends Component {
     });
   }
 
+  setMovieStateAndRedirect = ( selected ) =>{
+    this.setState({
+      selectedMovie: selected.id
+    })
+    this.props.getMovieHandler !== undefined ?
+      this.props.getMovieHandler( selected.id ) :
+      console.log( selected );
+    
+    window.location.assign(fMovie.processMovieURL( selected.id, true, true ))
+  }
+
   searchQueryHandler = ( value ) =>{
     this.setState({
       searchQuery: value.trim() // to avoid unusual whitespaces.
@@ -54,22 +65,20 @@ class MovieSearchForm extends Component {
   render() {
     return (
       <div className={styles.MovieSearchForm}>
-        {
+        {/* {
           this.state.selectedMovie !== undefined &&
           this.state.selectedMovie !== "" ?
             ( 
               <Redirect to={ fMovie.processMovieURL( this.state.selectedMovie, true ) } />
             ):null
-        }
+        } */}
         <Typeahead
           id="tt_movie_search_input"
           onChange={ 
             (selected)=>{
-              // console.log(selected)
-              this.setState({
-                selectedMovie: selected[0].id
-              })
-              window.location.href=fMovie.processMovieURL( selected[0].id, true )
+              selected[0] !== undefined? 
+                this.setMovieStateAndRedirect( selected[0] ):
+                console.log( 'undefined' )
             }
           }
           options={

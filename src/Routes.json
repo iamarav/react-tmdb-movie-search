@@ -1,4 +1,8 @@
 {
+    "_settings":{
+        "hash_routing": true,
+        "production_url": "https://iamarav.github.io/react-tmdb-movie-search"
+    },
     "home": {
         "path": "/",
         "page_title": "Home Page"

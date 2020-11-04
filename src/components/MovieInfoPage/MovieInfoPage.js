@@ -5,6 +5,7 @@ import MovieSearchForm from '../MovieSearchForm/MovieSearchForm';
 import { Container } from 'react-bootstrap';
 
 import Movie from '../Movie/Movie'
+import fMovie from '../../functions/movie';
 
 class MovieInfoPage extends Component {
   constructor(props) {
@@ -28,8 +29,16 @@ class MovieInfoPage extends Component {
         })
         } 
       )
-
   }  
+
+  getMovieHandler = ( movie_id ) => {
+    // console.log( 'Setting State Movie id', movie_id )
+    // this.setState({
+    //   movie_id
+    // })
+    window.location.assign(fMovie.processMovieURL( movie_id, true, true ))
+    window.location.reload();
+  }
   render() {
     return (
       <div className={styles.MovieInfoPage}>
@@ -43,7 +52,9 @@ class MovieInfoPage extends Component {
               <Container className="mt-5" >
                 <strong>Try Again</strong>
                 <br />&nbsp;<br />
-                <MovieSearchForm />
+                <MovieSearchForm 
+                  getMovieHandler = { ( movie_id ) => this.getMovieHandler( movie_id ) }
+                />
               </Container>
             </div>
           ):
@@ -55,6 +66,7 @@ class MovieInfoPage extends Component {
             ):
             <Movie
               data={ this.state.movie_data }
+              getMovieHandler = { ( movie_id )=>this.getMovieHandler( movie_id ) }
             />
         }
       </div>

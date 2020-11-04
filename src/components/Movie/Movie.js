@@ -1,10 +1,10 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import { Badge, Col, Container, Row, Table } from 'react-bootstrap';
 import api from '../../api.tmdb';
 import MovieSearchForm from '../MovieSearchForm/MovieSearchForm';
 import styles from './Movie.module.css';
 
-class Movie extends PureComponent {
+class Movie extends Component {
   render() {
     const movie = this.props.data
     // console.log( movie )
@@ -12,7 +12,9 @@ class Movie extends PureComponent {
       <div className={ styles.Movie + " mt-3" }>
         <Container >
           <div>
-            <MovieSearchForm />
+            <MovieSearchForm 
+              getMovieHandler = { ( movie_id ) => this.props.getMovieHandler( movie_id ) }
+            />
           </div>
           <Row className=" mt-4" >
             { 
