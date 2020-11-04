@@ -29,7 +29,7 @@ class MovieSearchForm extends Component {
         ).then(
           result => {
             const filtered_results = result.results.filter((item, key) => {
-              if (key <= 5 && key > 0) {
+              if (key <= 10 && key > 0) {
                 return item;
               }
               return false;
