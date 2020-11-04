@@ -61,8 +61,8 @@ class Movie extends Component {
                     <td>${ movie.revenue }</td>
                   </tr>
                   <tr>
-                    <td>Time</td>
-                    <td>{ movie.runtime } minutes</td>
+                    <td>Budget</td>
+                    <td>${ movie.budget }</td>
                   </tr>
                   <tr>
                     <td>Adult</td>
